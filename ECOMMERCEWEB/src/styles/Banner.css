@@ -1,0 +1,17 @@
+#banner * {
+    font-family: 'Gilroy-dark', sans-serif !important;
+  }
+
+  #banner h3, #banner p, #banner u {
+    font-family: 'Gilroy-dark', sans-serif !important;
+  }
+  
+  #banner p, #banner u {
+    font-family: 'Gilroy-medium', sans-serif !important;
+    letter-spacing: -0.5px;
+    color: #dadada;
+    text-decoration: none;
+  }
+  #banner u{
+    font-size: 0.90vmax;
+  }

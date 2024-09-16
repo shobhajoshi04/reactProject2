@@ -1,0 +1,43 @@
+.HotItemCard{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+    width: 31%;
+    margin:  0.3vmax;
+    transition: all 0.5s;
+    border-radius: 20px;
+    cursor: pointer;
+    
+
+}
+
+.HotItemCard:hover{
+    transform: translateY(-0.4vmax);
+    box-shadow: 0px 6px 15px rgba(53, 53, 53, 0.363);
+
+}
+
+
+.HotItemCard > img{
+    width: 80%;
+    background-size: cover;
+
+}
+
+
+.HotItemCard > p {
+   font-family: 'Gilroy-medium';
+   letter-spacing: -0.5px;
+    color: rgb(85, 83, 83);
+
+}
+
+.HotItemCard > span{
+
+    color:#000000be;
+    margin-top: -0.5vmax;
+font-size: 1vmax;
+    font-family: Gilroy-medium;
+
+}

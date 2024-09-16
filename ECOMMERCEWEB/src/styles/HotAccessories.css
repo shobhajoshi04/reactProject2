@@ -1,0 +1,41 @@
+.HotAccessories {
+  display: flex;
+ 
+  align-content: center;
+  margin: auto;
+  width: 90vw;
+  height: 95vh;
+ 
+}
+
+.HotAccessoriesCover{
+  width: 80vw;
+  height: 95vh;
+  overflow: hidden;
+  border-radius: 20px;
+
+  
+}
+.HotAccessoriesCover img{
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  transition: all 0.5s;
+ 
+}
+
+
+
+
+
+.HotAccessoriesCover >  img:hover {
+  transform: translateY(-0.4vmax);
+  box-shadow: 0px 6px 15px rgba(53, 53, 53, 0.363);
+}
+
+.HotAccessories > div:last-child {
+  display: flex;
+  flex-wrap: wrap;
+}
+

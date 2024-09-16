@@ -1,0 +1,99 @@
+.nav {
+    z-index: 1000;
+    background-color: white;
+    padding: 1vmax;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid rgba(43, 43, 43, 0.137);
+}
+
+.logo {
+    margin-right: 2vmax;
+}
+
+.logo__container {
+    position: relative;
+    width: 30px; /* Adjust to fit your SVG */
+    height: 30px; /* Adjust to fit your SVG */
+    overflow: hidden;
+}
+
+.logo__icon {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.3s ease-in-out;
+}
+
+.logo__icon--default {
+    z-index: 2; /* Make sure it's above the hover icon initially */
+}
+
+.logo__icon--hover {
+    z-index: 1; /* Initially below the default icon */
+    transform: translateX(100%); /* Move it out of view initially */
+}
+
+.logo:hover .logo__icon--default {
+    transform: translateX(-100%); /* Slide out of view on hover */
+}
+
+.logo:hover .logo__icon--hover {
+    transform: translateX(0); /* Slide into view on hover */
+}
+
+.searchBox {
+    position: relative;
+    left: 5vmax;
+    display: flex;
+    align-items: center;
+}
+
+.searchBox > input {
+    position: relative;
+    border-radius: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.247);;
+    width: 20vmax;
+    overflow: hidden;
+    height: 2.5vmax;
+    font-size:0 1vmax;
+    padding-left: 1vmax;
+    z-index: 99;
+    color: rgb(61, 61, 61);
+    font-weight: 100;
+}
+
+
+
+.searchBox svg {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.247);
+    fill: rgb(61, 61, 61);
+    width: 5vmax;
+    height: 2.5vmax;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    left: 75%;
+    z-index: 10000;
+    top: 0;
+    
+}
+
+.navlinks {
+    color: rgb(59, 59, 59);
+    text-decoration: none;
+letter-spacing: 0.10px;
+    margin: 1vmax 1.2vmax;
+    font-family: 'Gilroy-medium', sans-serif; /* Apply custom font */
+    font-size: 1.1vmax;
+    transition: color 0.3s ease-in-out, border-bottom 0.3s ease-in-out;
+}
+
+.navlinks:hover {
+    color: rgba(61, 61, 61, 0.486);
+    border-bottom: 1px solid rgba(61, 61, 61, 0.11);
+}

@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Font-face declaration */
+@font-face {
+    font-family: 'geist';
+    src: url('/Geist-Medium-BF6569491e1c281.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Gilroy-dark';
+    src: url('/Gilroy-ExtraBold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Gilroy-light';
+    src: url('/Gilroy-Light.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Gilroy-medium';
+    src: url('/Gilroy-Medium.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Gilroy-reg';
+    src: url('/Gilroy-Regular\ \(1\).ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/* Global Styles */
+body {
+    margin: 0;
+    background-color: rgba(128, 128, 128, 0.534);
+    font-family: 'geist', 'Gilroy-light', 'Gilroy-dark', 'Gilroy-reg', 'Gilroy-medium' sans-serif;
+}
